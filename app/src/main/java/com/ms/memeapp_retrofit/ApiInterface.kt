@@ -1,0 +1,7 @@
+package com.ms.memeapp_retrofit
+import retrofit2.http.GET
+
+interface ApiInterface {
+    @GET("/gimme")
+    fun getData() : retrofit2.Call<responseDataClass>
+}
